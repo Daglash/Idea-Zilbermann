@@ -1,529 +1,151 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 a {
     color: white;
   }
   
-  /* header */
-  
-.header {
-    background-color:#667292;
-    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-    position: fixed;
-    width: 100%;
-    z-index: 3;
+:root{
+  --color0:#bccad6;
+  --color1:#8d9db6;
+  --color2:#667292;
+  --color3:#f1e3dd;
 }
- 
-.header ul{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-  background-color: #8d9db6;
-}
-
-.header ul a {
-  display: block;
-  padding: 30px 30px;
-  border-right: 1px solid #f4f4f4;
-  text-decoration: none;
-}
-
-.header ul a:hover{
-  background-color: #bccad6;
-}
-
-.header .menu-btn:hover {
-  background-color: #f4f4f4;
-}
-
-.header img {
-  display: block;
-  float: left;
-  padding: 10px 20px;
-  border-radius: 50%;
-  width: 50px; 
-  height: 50px;
-  margin-left: 35px;
-}
-
-/* menu */
-
-.header .menu {
-  clear: both;
-  max-height: 0;
-  transition: max-height .2s ease-out;
-}
-
-/* menu icono */
-
-.header .menu-icon {
-  cursor: pointer;
-  float: right;
-  padding: 35px 25px;
-  position: relative;
-  user-select: none;
-}
-
-.header .menu-icon .nav-icon {
-  background: white;
-  display: block;
-  height: 2px;
-  position: relative;
-  transition: background .2s ease-out;
-  width: 18px;
-}
-
-.header .menu-icon .nav-icon:before,
-.header .menu-icon .nav-icon:after {
-  background: white;
-  content: "";
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  transition: all .2s ease-out;
-}
-
-.header .menu-icon .nav-icon:before {
-  top: 5px;
-}
-
-.header .menu-icon .nav-icon:after {
-  top: -5px;
-}
-
-/* menu btn */
-
-.header .menu-btn {
-  display: none;
-}
-
-.header .menu-btn:checked ~ .menu {
-  max-height: 450px;
-}
-
-.header .menu-btn:checked ~ .menu-icon .nav-icon {
-  background: transparent;
-}
-
-.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
-  transform: rotate(-45deg);
-  top:0;
-}
-
-.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
-  transform: rotate(45deg);
-  top:0;
-}
-
-
-/* / Responsive / */
-
-@media (min-width: 880px) {
-  .header li {
-    float: left;
-  }
-
-  .header{
-    height: fit-content;
-    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-  }
-
-  .header li a {
-    padding: 25px 30px;
-    border: none;
-    background-color:#667292 ;
-  }
-  .header .menu {
-    clear: none;
-    float: right;
-    max-height: none;
-  }
-  .header .menu-icon {
-    display: none;
-  }
-}
-
-
-
-
-/* main */
-
-
-/* Index */
 
 main{
   background-color: #f1e3dd;
 }
 
-.portada {
-  background: url(imagenes/ba.png) no-repeat center; 
-  background-size: cover;
-  height: 450px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+/* header inicio*/
+  
+.navbar{
+    background-color:var(--color2) ;
+
+  } 
+
+.navbar-brand img{
+  border-radius: 50%;
 }
 
+/* header fin */
 
-.portada:before{
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: #8d9db6;
-  opacity: 0.5;
+/* index main inicio */
+
+.jumbotron{
+    background-image: url(imagenes/Baires.png);
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    position: relative;
+    color: white;
+    text-shadow: 0 0 10px black;
+    margin: 0;
+    border-radius: 0;
 }
 
-.portada h1,h3{
-  position:relative; 
-}
-
-.portada h1{
+h1{
   font-size: 60px;
   color: white;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-text-stroke: 1px black;
 }
-
-.portada h3{
+.parrafo_portada{
   font-size: 25px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: center;
   color:white;
-  -webkit-text-stroke: 1px black;
-  animation-duration: 2s;
-  animation-name: aparecer;
-  animation-delay: 0s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-duration: 5s;
 }
 
-@keyframes aparecer{
-  0%{
-    opacity:0;
-  } 
-  100%{
-    opacity: 1;
-  }
- }
- 
-
-.container {  
-  
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 300px 300px;
-  grid-auto-columns: 1fr;
-  grid-auto-rows: 1fr;
-  grid-template-areas:
-  "texto-1 imagen-1"
-  "imagen-2 texto-2"
-  ;
-  gap:0;
-  grid-auto-flow: row;
-  width: 100%;
-  height: 100%;
+h2{
+  text-align: center;
+  background-color: #667292;
+  margin: 0;
+  border-radius: 0;
+  padding: 20px 20px;
+  color: white;
+  text-shadow: 0 0 10px black;
 }
 
-.imagen-1,.texto-1,.imagen-2 ,.texto-2{
-  background-color: white;
+strong{
+  color: #667292;
 }
 
-.imagen-1 { grid-area: imagen-1;
-background-image: url(imagenes/imagen-1.png);
-background-position: center;
-background-repeat: no-repeat;
-
-animation-name: slide_right;
-animation-duration: 1s;
-}
-
-@keyframes slide_right{
-  0%{
-    transform:translatex(-250px);
-  } 
-  100%{
-    transform:translatex(0);
-  }
-  0%{
-    opacity:0;
-  } 
-
-  30%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
- }
-
-
-
-
-
-.texto-1{ grid-area: texto-1; 
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-
-animation-name: slide_left;
-animation-duration: 1.0s;
-}
-
-@keyframes slide_left{
-  0%{
-    transform:translatex(250px);
-  } 
-  100%{
-    transform:translatex(0);
-  }
-  0%{
-    opacity:0;
-  } 
-
-  30%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
- }
-
-
-.texto-1 h2{
-  font-size: 40px;
-  color: #8d9db6;
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-text-stroke: 1px black;
-  
-}
-
-
-.imagen-2 { grid-area: imagen-2; 
-background-image: url(imagenes/imagen-2.png);
-background-position: center;
-background-repeat: no-repeat;
-
-animation-name: slide_right;
-animation-duration: 2s;
-}
-
-
-.texto-2 { grid-area: texto-2;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center ;
-padding: 20px 30px;
-
-animation-name: slide_left;
-animation-duration: 2s;
-}
-
-
-
-/* main */
-
-/* consorcios adm */
-
-.consorciosadm1{
-  background-color: white;
-  display: grid;
-  grid-template-columns: repeat(4,1fr );
-  grid-template-rows: repeat(3,200px);     
-  padding: 20px;
-  grid-gap: 10px;
-}
-
-.frente{
+.card{
+  text-align: center;
+  display: flex;
   border: 2px solid black;
 }
 
-.frente:hover{
-  transform:scale(1.05);
-  transition: all 1s; 
-  filter: grayscale(100%);
-}
 
-.hall1{
-  grid-column: 1/2;
-  grid-row: 1/2;
-  background-image: url(imagenes/hall1.png);
-  background-position: center;
-  background-size: cover;
-}
 
-.hall2{
-  grid-column: 2/3;
-  grid-row: 1/2;
-  background-image: url(imagenes/hall2.png);
-  background-position: center;
-  background-size: cover;
 
-}
 
-.hall3{
-  grid-column: 3/4;
-  grid-row: 1/2;
-  background-image: url(imagenes/hall3.png);
-  background-position: center;
-  background-size: cover;
-}
+/* index main fin */
 
-.hall4{
-  grid-column: 4/5;
-  grid-row: 1/2;
-  background-image: url(imagenes/hall4.png);
-  background-position: center;
-  background-size: cover;
-}
 
-.hall5{
-  grid-column: 1/3;
-  grid-row: 2/3;
-  background-image: url(imagenes/hall5.png);
-  background-position: center;
-  background-size: cover;
-}
-.hall6{
-  grid-column:3/5;
-  grid-row: 2/2;
-  background-image: url(imagenes/hall6.png);
-  background-position: center;
-  background-size: cover;
-}
-.hall7{
-  grid-column: 1/3;
-  grid-row: 3;
-  background-image: url(imagenes/hall7.png);
-  background-position: center;
-  background-size: cover;
-}
-.hall8{
-  grid-column:3/5 ;
-  grid-row: 3;
-  background-image: url(imagenes/hall8.png);
-  background-position: center;
-  background-size: cover;
-}
 
-.container3 {  
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-auto-columns: 300px;
-  grid-auto-rows: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row dense;
-  grid-template-areas:
-    "passadm googlemap ";
+/* consorcios adm inicio*/
 
+#demo{
+  padding: 0px;
+  border: 10px solid white;
+}
+.row{
+  border-radius: 30px;
+}
+.form img{
+  border-top-left-radius:30px;
+  border-bottom-left-radius:30px;
+  width: 100%;
   height: 100%;
-  padding: 50px 50px;
+}
+.form h2{
+  padding: 5px;
+  color: #667292;
+  background-color: white;
+  text-shadow: none;
+  text-align: left;
+}
+.form a{
+  color: var(--color1);
+  font-size: 15px;
+  text-align: center;
+
 }
 
-.passadm { grid-area: passadm; 
-    background-color: #f1f1f1;
-    padding: 20px;
+.form p{
+  color: black;
+  font-size: 15px;
+  text-align: left;
 }
 
-
-.googlemap { 
-  grid-area: googlemap;
+.btn1{
+  border:none;
+  outline: none;
+  height: 50px;
+  width: 100%;
+  background-color: var(--color2);
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
 }
-
-
-
-
-
-
-/* reponsive consorcios */
-
-@media only screen and (min-width:768px){
-.consorciosadm1{
-  grid-template-columns: repeat(8,1fr );
-  grid-template-rows: repeat(3,200px); 
+.btn1:hover{
+  background-color: white;
+  border: 1px solid;
+  color: var(--color2);
 }
-  .hall1{
-    grid-column: 1/2;
-    grid-row: 1/4;
-    background-image: url(imagenes/hall1.png);
-    background-position: center;
-    background-size: cover;
-  }
-  
-  .hall2{
-    grid-column: 2/3;
-    grid-row: 1/4;
-    background-image: url(imagenes/hall2.png);
-    background-position: center;
-    background-size: cover;
-  
-  }
-  
-  .hall3{
-    grid-column: 3/4;
-    grid-row: 1/4;
-    background-image: url(imagenes/hall3.png);
-    background-position: center;
-    background-size: cover;
-  }
-  
-  .hall4{
-    grid-column: 4/5;
-    grid-row: 1/4;
-    background-image: url(imagenes/hall4.png);
-    background-position: center;
-    background-size: cover;
-  }
-  
-  .hall5{
-    grid-column: 5/6;
-    grid-row: 1/4;
-    background-image: url(imagenes/hall5.png);
-    background-position: center;
-    background-size: cover;
-  }
-  .hall6{
-    grid-column: 6/7;
-    grid-row: 1/4;
-    background-image: url(imagenes/hall6.png);
-    background-position: center;
-    background-size: cover;
-  }
-  .hall7{
-    grid-column: 7/8;
-    grid-row: 1/4;
-    background-image: url(imagenes/hall7.png);
-    background-position: center;
-    background-size: cover;
-  }
-  .hall8{
-    grid-column: 8/8;
-    grid-row: 1/4;
-    background-image: url(imagenes/hall8.png);
-    background-position: center;
-    background-size: cover;
-  }
-}
+/* consorcios adm fin*/
 
-/* Contacto */
+/* Contacto inicio*/
 
 .maincontacto{
   background-image: url(imagenes/BuenosAires.png);
   background-size: 100vw 100vh;
   background-attachment: fixed;
   margin: 0;
+  padding: 20px 20px;
 }
 
 .form1{
@@ -535,12 +157,9 @@ animation-duration: 2s;
   margin-top: 20px;
   border-radius: 7px;
   color: white;
-
-
-
 }
 
-.h2formulario{
+.h6formulario{
   color: white;
   text-align: center;
   margin: 0;
@@ -566,110 +185,46 @@ textarea{
 
 }
 
-
+/* Contacto fin*/
 
 /* nuestro equipo */
-
-.profile{
-  padding-top: 70px;
-  text-align: center;
-
-  animation-name: slide_up;
-  animation-duration: 1.4s;
-
+.equipoh2{
+  background-color: var(--color1);
 }
 
-.profile-info{
-  margin-bottom: 25px;
+.equipo-row{
+  padding: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5%; 
 }
 
-.profile-img{
-  width: 80%;
-  max-width: 300px;
-
+.cardanimate .card{
+  border: 3px solid black;
+  margin-bottom: 10px;
 }
 
-
-.profile-title{
-  font-size: 35px;
-  font-weight: bold;
-  margin: 0;
-  color: #667292;
-  
+.cardanimate .card:hover{
+  transform: scale(1.05);
+  transition: all 1.7s;
 }
-
-.profile-details{
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.3;
-  max-width: 450px;
-  margin: 20px auto;
-}
-
-  
-@keyframes slide_up{
-  0%{
-    transform:translateY(250px);
-  } 
-  100%{
-    transform:translateY(0);
-  }
-  0%{
-    opacity:0;
-  } 
-
-  30%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
- }
-
-/* responsive   */
-
-@media (min-width: 950px){
-  .profile{
-    padding-top: 70px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    max-width: 980px;
-    margin: 0 auto;  
-  }
-  
-  .profile-info{
-    margin-bottom: 25px;
-  }
-  
-  .profile-img{
-    width: 100%;
-    max-width: 300px;
-    transform: scaleX(-1);
-  }
-  
-  
-  .profile-title{
-    font-size: 60px;
-    font-weight: bold;
-    margin: 0;
-    color: #667292;
-  }
-  
-  .profile-details{
-    font-size: 25px;
-    font-weight: 500;
-    line-height: 1.3;
-    max-width: 450px;
-    margin: 30px auto;
-  }
-  
-
-
-}
-
+/* nuestro equipo fin */
 
 /* servicios  */
+
+.body1{
+  background-color: var(--color3);
+  background-image: url(imagenes/hall3.png);
+  size: 500px;
+  
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border: none;
+  min-height: 500px;
+}
 
 .servicio-pro {  
   display: grid;
@@ -682,7 +237,7 @@ textarea{
   grid-auto-flow: row dense;
   width: 100%;
   height: 100%;
-  background-image: url(imagenes/wave-haikei.png);
+  background-color:var(--color3) ;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -697,7 +252,6 @@ textarea{
   margin: 20px auto;}
 
 .servicios-titulo { grid-area: 1 / 1 / 2 / 2; 
-  background-image: url(imagenes/apreton.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -736,83 +290,28 @@ textarea{
 
 
 
-/* footer */
+/* footer inicio */
 
-
-.footer-basic {
-  padding:40px 0;
-  background-color:#667292;
-  color:white;
+#footer1{
+  background-color: #667292;
 }
 
-.footer-basic ul {
-  padding:0;
-  list-style:none;
-  text-align:center;
-  font-size:18px;
-  line-height:1.6;
-  margin-bottom:0;
+.page-footer{
+  background-color: #667292;
 }
 
-.footer-basic li {
-  padding:0 10px;
+h5{
+  text-align: center;
+
+}
+.list-unstyled{
+  color: white;
 }
 
-.footer-basic ul a {
-  color:inherit;
-  text-decoration:none;
-  opacity:0.8;
-}
-
-.footer-basic ul a:hover {
-  opacity:1;
-}
-
-.footer-basic .social {
-  text-align:center;
-  padding-bottom:25px;
-}
-
-.footer-basic .social > a {
-  font-size:24px;
-  width:40px;
-  height:40px;
-  line-height:40px;
-  display:inline-block;
-  text-align:center;
-  border-radius:50%;
-  border:1px solid #ccc;
-  margin:0 8px;
-  color:inherit;
-  opacity:0.75;
-}
-
-.footer-basic .social > a:hover {
-  opacity:0.9;
-}
-
-.footer-basic .list-inline{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-
-} 
-
-.footer-basic .copyright {
-  margin-top:15px;
-  text-align:center;
-  font-size:13px;
-  color:#aaa;
-  margin-bottom:0;
-}
+/* footer fin */
 
 
-
-
-
-
-
+/* whatsapp icon inicio */
 .whatsapp{
   height: 50px;
   width: 50px;
@@ -831,3 +330,4 @@ textarea{
   font-weight: bold;
   /* text-shadow: 0 0 10px black; */
 }
+/* whatsapp icon fin */

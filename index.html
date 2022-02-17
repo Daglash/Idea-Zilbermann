@@ -6,98 +6,272 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administracion</title>
     <link rel="icon" href="imagenes/Favicon.png">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="estilo.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
 </head>
 
 <body>
-    
-    <header class="header">
-        <img src="imagenes/logo.png" alt="logo empresa">
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
-        <ul class="menu" >
-            <li><a href="index.html">Index</a></li>
-            <li><a href="nuestroequipo.html">Nuestro Equipo</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="consorciosadm.html">Consorcios Administrados</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+   <header>
+    <!--navbar inicio  -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <!-- Brand -->
+        <nav class="navbar">
+        <a class="navbar-brand" href="index.html">
+        <img src="imagenes/logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
+        </a>
+          </nav>
+      
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Index</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nuestroequipo.html">Nuestro Equipo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="consorciosadm.html">Consorcios Administrados</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <!--navbar fin -->
     </header>
 
     <main>
-        <div class="portada">
-              <h1>Administracion N/C</h1>
-              <h3>ofreciendo soluciones integrales</h3>
-        </div>
-        <br><br><br>
+    <!-- jumbotron inicio -->
+    <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <div class="imagen-1"></div>
-            <div class="texto-1">
-                <h2>Como trabajamos</h2>
-                <ul>
-                    <li>Comunicación fluida y directa con el Administrador.</li>
-                    <li>Respuesta inmediata a los reclamos.</li>
-                    <li>Control de las tareas de los encargados.</li>
-                    <li>Visitas frecuentes al edificio.</li>
-                    <li>Proveedores altamente capacitados y calificados.</li>
-                    <li>Seguimiento online del consorcio.</li>
-                    <li>Múltiples medios de pago de expensas.</li>
-                </ul>
-            </div>
-            <div class="imagen-2"></div>
-            <div class="texto-2">
-                <p>
-                    Somos un grupo de profesionales con mas de 10 años de experiencia en el rubro, contamos con un gran equipo para darle un nuevo nombre a la Administración de propiedad Horizontal, generando una cultura empresarial diferente, lejos de los vicios clásicos, renovando la imagen de la actividad y trabajando para hacer de ella una profesión, un Arte.
-                    
-                </p>
-            </div>
-          </div>
+              <h1 class="animate__bounceIn">Administracion N/C</h1>
+              <p class="parrafo_portada" >ofreciendo soluciones integrales</p>
+        </div>
+    </div>
+    <!-- jumbotron fin -->
 
+    <!-- como trabajamos inicio -->
+    <h2>Como trabajamos</h2>
 
+    <div class="container-fluid">
 
-    </main>
-    <br><br><br>
-    <footer>
-        
-        <body>
-            <div class="footer-basic">
-                <footer>
-                    <div class="social">
-                        <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fwelcome" target="_blank"><i class="fab fa-snapchat"></i></a>
-                        <a href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-                    </div>
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="#">SIN</a></li>
-                        <li class="list-inline-item"><a href="#">SIN</a></li>
-                        <li class="list-inline-item"><a href="#">SIN</a></li>
-                        <li class="list-inline-item"><a href="#">SIN</a></li>
-                        <li class="list-inline-item"><a href="#">SIN</a></li>
-                    </ul>
-                    <p class="copyright">Administracion N/C © 2022</p>
-                </footer>
+        <div class="row" id="rowtrabajamos">
+
+            <div class="text-row color4 col-xs-12 col-sm-12 col-md-12 col-lg-8">
+                <p>Contamos con una plataforma donde podrán acceder a toda la información del consorcio, descargar expensas, comprobantes de pagos, informar los pagos, visualizar las facturas liquidadas del mes, reservar amenities, recibir todas las novedades y crear solicitudes de trabajos en unidades y verificar su evolución con N de seguimiento.</p>
+
+                <p> Los administradores realizaran visitas semanales con el fin de controlar al personal y realizar el seguimiento de las obras, además coordinaran con cada proveedor para estar al tanto de todas las novedades que sucedan en el consorcio.</p>
+                
+                <p><strong> Atención personalizada las 24hs.</strong></p>
+                
+                <p>Sostenemos que es de suma importancia la comunicación fluida con los propietarios, inquilinos e integrantes del consejo de administración es por ello que brindaremos amplias vías de comunicación.</p>
+                
+                <p><strong> Trabajamos para ser reconocidos por nuestro comportamiento honesto e  integro,merecedores de la confianza de nuestros clientes.</strong></p>
             </div>
             
-        </body>
+            
 
+            <div class="image-row color2 col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                <img src="imagenes/imagen-1.png" class="img-thumbnail" alt="foto" class="img-fluid">
+            </div>
+        </div>
 
+    </div>
+    <!-- como trabajamos fin -->
+
+    <!-- Container admi inicio -->
+    <h2>Administración de consorcios de calidad</h2>
+    <br>
+    <div class="container">
+      <div class="card-deck">
+          <div class="card card1 mb-4">
+            <i class="far fa-handshake fa-3x"></i>
+              <div class="card-body">
+                  <h4 class="card-title">Compromiso</h4>
+                  <p class="card-text">Atención Personalizada y directa las 24hs</p>
+                  <p class="card-text">Respuestas inmediatas</p>
+                  <p class="card-text">Promovemos las reuniones que sean necesarias</p>
+              </div>
+          </div>
+          <div class="card mb-4">
+            <i class="fas fa-desktop fa-3x"></i>
+              <div class="card-body">
+                  <h4 class="card-title">Sistema de mensajería</h4>
+                  <p class="card-text">Aviso de cierre de expensas</p>
+                  <p class="card-text">Envió de notificaciones y novedades mediante mail y app</p>
+              </div>
+          </div>
+          <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+          <div class="card mb-4">
+            <i class="fas fa-tools fa-3x"></i>
+              <div class="card-body">
+                  <h4 class="card-title">Reparaciones</h4>
+                  <p class="card-text">Mantenimiento del consorcio</p>
+                  <p class="card-text">Visitas semanales</p>
+                  <p class="card-text">Solicitud de presupuestos</p>
+                  <p class="card-text">Seguimiento de trabajos y obras</p>
+              </div>
+          </div>
+          <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md--></div>
+          <div class="card mb-4">
+            <i class="fas fa-coins fa-3x"></i>
+              <div class="card-body">
+                  <h4 class="card-title">Recaudación de expensas</h4>
+                    <p class="card-text">Simplicidad en las formas de pago</p>
+                    <p class="card-text">Seguimiento de morosos</p>
+              </div>
+          </div>
+          <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+           <div class="w-100 d-none d-lg-block d-xl-none"><!-- wrap every 4 on lg--></div>
+          <div class="card mb-4">
+            <i class="fas fa-sticky-note fa-3x"></i>
+              <div class="card-body">
+                  <h4 class="card-title">Modulo de propietarios</h4>
+                  <p class="card-text">Ver y descargar liquidación de expensas</p>
+                  <p class="card-text">Ver y descargar recibo de pago</p>
+                  <p class="card-text">Reserva de amenities</p>
+                  <p class="card-text">Gestión y seguimiento de reclamos</p>
+                  <p class="card-text">Informar el pago</p>
+                  <p class="card-text">Ver novedades</p>
+                  <p class="card-text">Visualización de saldo en tiempo real</p>
+                  <p class="card-text">Aviso de cierre de expensa</p>
+              </div>
+          </div>
+      </div>
+  </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- <Section id="admcalidad">
+    <div class="container-fluid">
+        <div class="row-admi">
+            <div class="card-deck">
+                <div class="card" >
+                  <div class="card-body text-center">
+                    <i class="far fa-handshake fa-3x"></i>
+                    <h4>Compromiso</h4>
+                    <p class="card-text">
+                        Atención Personalizada y directa las 24hs</p>
+                    <p>Respuestas inmediatas</p>
+                    <p>Promovemos las reuniones que sean necesarias</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body text-center">
+                    <i class="fas fa-desktop fa-3x"></i>
+                    <h4>Sistema de mensajería</h4>
+                    <p class="card-text">
+                        Aviso de cierre de expensas</p>
+                    <p>Envió de notificaciones y novedades mediante mail y app</p>
+                    </div>  
+                </div>
+                <div class="card">
+                  <div class="card-body text-center">
+                    <i class="fas fa-sticky-note fa-3x"></i>
+                    <h4>Modulo de propietarios</h4>
+                    <p class="card-text">
+                        <p>Ver y descargar liquidación de expensas</p>
+                        <p>Ver y descargar recibo de pago</p>
+                        <p>Reserva de amenities</p>
+                        <p>Gestión y seguimiento de reclamos</p>
+                        <p>Informar el pago</p>
+                        <p>Ver novedades</p>
+                        <p>Visualización de saldo en tiempo real</p>
+                        <p>Aviso de cierre de expensa</p>
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-tools fa-3x"></i>
+                        <h4>Reparaciones</h4>
+                        <p class="card-text">
+                           Reparaciones</p>
+                           <p>Mantenimiento del consorcio</p>
+                             <p>Visitas semanales</p>
+                            <p>Solicitud de presupuestos</p>
+                            <p>Seguimiento de trabajos y obras</p>
+                    </div>  
+                </div>
+                <div class="card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-coins fa-3x"></i>
+                        <h4>Recaudación de expensas</h4>
+                        <p class="card-text">
+                            <p>Simplicidad en las formas de pago</p>
+                            <p>Seguimiento de morosos</p>
+                </p>
+            </div>
+        </div>
+
+    </div>
+  </Section> -->
+    </main>
+    <!-- container admi fin -->
+
+    <!-- Footer inicio -->
+    <footer class="page-footer font-small teal pt-4 ">
+    <div class="container-fluid text-center text-md-left">
+      <div class="row" id="footer1">
+        <div class="grid-footer col-md-6 mt-md-0 mt-3">
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+          <ul class="list-unstyled text-center">
+            <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+            <a href="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fwelcome" target="_blank"><i class="fab fa-snapchat fa-3x"></i></a>
+            <a href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
+          </ul>
+        </div>
+        <hr class="clearfix w-100 d-md-none pb-3">
+        <div class="col-md-6 mb-md-0 mb-3">
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">DATOS DE CONTACTO
+        </h5>
+          <ul class="list-unstyled text-center ">
+            <li><i class="fas fa-envelope"></i> Consorcios N/Cs@gmail.com</li>
+            <li><i class="fas fa-phone"></i> 15 7021-7776 / 15 2651-6169</li>
+            <li><i class="fas fa-map-marker-alt"></i>Av. N/C 3011, CABA</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright text-center py-3">© 2022 Copyright:
+      <a href="contacto.html"> Administracion N/C © 2022</a>
+    </div>
     </footer>
+    <!-- Footer fin-->
 
+    <!-- whatsapp icon -->
     <div class="whatsapp">
         <i class="fab fa-whatsapp"></i>
     </div>
+    <!-- whatsapp icon fin -->
 
-
-
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 </body>
-
-
-
-
 
 </html>
