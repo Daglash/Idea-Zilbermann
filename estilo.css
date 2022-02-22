@@ -78,10 +78,6 @@ strong{
   border: 2px solid black;
 }
 
-
-
-
-
 /* index main fin */
 
 
@@ -196,7 +192,7 @@ textarea{
   padding: 5%;
   display: flex;
   justify-content: space-evenly;
-  gap: 5%; 
+  gap: 20px; 
 }
 
 .cardanimate .card{
@@ -210,7 +206,7 @@ textarea{
 }
 /* nuestro equipo fin */
 
-/* servicios  */
+/* servicios inicio */
 
 .body1{
   background-color: var(--color3);
@@ -276,17 +272,7 @@ textarea{
   text-decoration: solid;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+/* servicio fin */
 
 
 
