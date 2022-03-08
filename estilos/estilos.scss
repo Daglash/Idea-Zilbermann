@@ -17,14 +17,10 @@ $color:(
 
 @mixin sombras{
   box-shadow: 0 1px 2px (0,0,0,0.5);
-  -webkit-box-shadow: 0 1px 2px (0,0,0,0.5);
-  -moz-box-shadow: 0 1px 2px (0,0,0,0.5);
 }
 
 @mixin Bordesredondeados{
   border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
 }
 
 *{
@@ -59,7 +55,7 @@ main{
 /* index main inicio */
 
 .jumbotron{
-    background-image: url(/imagenes/Baires.png);
+    background-image: url(../imagenes/Baires.png);
     background-size: cover;
     background-position: center;
     background-size: cover;
@@ -166,7 +162,7 @@ strong{
 /* Contacto inicio*/
 
 .maincontacto{
-  background-image: url(/imagenes/BuenosAires.png);
+  background-image: url(../imagenes/BuenosAires.png);
   background-size: 100vw 100vh;
   background-attachment: fixed;
   margin: 0;
@@ -239,7 +235,7 @@ textarea{
 
 .body1{
   background-color: $color3;
-  background-image: url(/imagenes/hall3.png);
+  background-image: url(../imagenes/hall3.png);
   size: 500px;
   
   border: 2px solid black;

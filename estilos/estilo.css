@@ -24,7 +24,7 @@ main {
 /* header fin */
 /* index main inicio */
 .jumbotron {
-  background-image: url(/imagenes/Baires.png);
+  background-image: url(../imagenes/Baires.png);
   background-size: cover;
   background-position: center;
   background-size: cover;
@@ -64,11 +64,7 @@ strong {
   text-align: center;
   display: flex;
   box-shadow: 0 1px 2px 0, 0, 0, 0.5;
-  -webkit-box-shadow: 0 1px 2px 0, 0, 0, 0.5;
-  -moz-box-shadow: 0 1px 2px 0, 0, 0, 0.5;
   border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
 }
 
 /* index main fin */
@@ -80,11 +76,7 @@ strong {
 
 .row {
   box-shadow: 0 1px 2px 0, 0, 0, 0.5;
-  -webkit-box-shadow: 0 1px 2px 0, 0, 0, 0.5;
-  -moz-box-shadow: 0 1px 2px 0, 0, 0, 0.5;
   border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
 }
 
 .form img {
@@ -131,7 +123,7 @@ strong {
 /* consorcios adm fin*/
 /* Contacto inicio*/
 .maincontacto {
-  background-image: url(/imagenes/BuenosAires.png);
+  background-image: url(../imagenes/BuenosAires.png);
   background-size: 100vw 100vh;
   background-attachment: fixed;
   margin: 0;
@@ -201,7 +193,7 @@ textarea {
 /* servicios inicio */
 .body1 {
   background-color: #f1e3dd;
-  background-image: url(/imagenes/hall3.png);
+  background-image: url(../imagenes/hall3.png);
   size: 500px;
   border: 2px solid black;
   display: flex;
