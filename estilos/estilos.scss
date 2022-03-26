@@ -33,14 +33,6 @@ a {
   color: white;
 }
 
-body{
-  width:100%;
-  margin: 0 auto;
-  min-width:440px;
-  max-width:3000px;
-  position: absolute;
-}
-
 
 
 main{
@@ -76,7 +68,7 @@ main{
 }
 
 h1{
-  font-size: 60px;
+  font-size: 35px;
   color: map-get($color, terciario );
   text-align: center;
 }
@@ -106,18 +98,16 @@ strong{
   @include Bordesredondeados;
 }
 
-// @media only screen and (min-width:292px) and (max-width:480px){
-//   h1{
-//     font-size: 40px;
-//     color: map-get($color, terciario );
-//     text-align: center;
-//   }
-//   .parrafo_portada{
-//     font-size: 25px;
-//     @extend h1;
-//   }
-//   }
-
+@media (max-width:480px){
+ body{
+  width:100%;
+  margin: 0 auto;
+  min-width:280px;
+  max-width:3000px;
+  position: absolute;
+  
+}
+}
 
 
 /* index main fin */
@@ -149,7 +139,9 @@ strong{
     background-color: map-get($color, terciario );
     text-shadow: none;
     text-align: left;
+    font-size: 100%;
     }
+
     a{
     color: $color1;
     font-size: 15px;
@@ -162,6 +154,10 @@ strong{
     }
   }
 // Form NESTING fin
+
+
+
+
 
 .btn1{
   border:none;
@@ -193,7 +189,7 @@ strong{
 }
 
 .form1{
-  width: 450px;
+  width: 50%;
   margin: auto;
   background: rgba(0,0,0,0.4);
   padding: 10px 20px;
@@ -202,20 +198,6 @@ strong{
   border-radius: 7px;
   color: map-get($color, terciario );
 }
-
-@media (max-width:480px){
-  .form1{
-    width: 350px;
-    margin: auto;
-    background: rgba(0,0,0,0.4);
-    padding: 10px 20px;
-    box-sizing: border-box;
-    margin-top: 20px;
-    border-radius: 7px;
-    color: map-get($color, terciario );
-  }
-  
-  }
 
 
 .h6formulario{
@@ -272,9 +254,11 @@ textarea{
 
 /* servicios inicio */
 
+
 .body1{
   background-color: $color3;
   background-image: url(../imagenes/hall3.png);
+  background-repeat: no-repeat;
   size: 500px;
   
   border: 2px solid black;
@@ -309,7 +293,8 @@ textarea{
   font-weight: 500;
   line-height: 1.3;
   max-width: 450px;
-  margin: 20px auto;}
+  margin: 20px auto;
+}
 
 .servicios-titulo { grid-area: 1 / 1 / 2 / 2; 
   background-position: center;
@@ -378,6 +363,6 @@ h5{
   font-size: 35px;
   line-height: 50px;
   font-weight: bold;
-  /* text-shadow: 0 0 10px black; */
+  
 }
 /* whatsapp icon fin */

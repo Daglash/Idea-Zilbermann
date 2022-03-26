@@ -8,14 +8,6 @@ a {
   color: white;
 }
 
-body {
-  width: 100%;
-  margin: 0 auto;
-  min-width: 440px;
-  max-width: 3000px;
-  position: absolute;
-}
-
 main {
   background-color: #e2d5cf;
 }
@@ -45,7 +37,7 @@ main {
 }
 
 h1, .parrafo_portada {
-  font-size: 60px;
+  font-size: 35px;
   color: white;
   text-align: center;
 }
@@ -75,6 +67,15 @@ strong {
   border-radius: 10px;
 }
 
+@media (max-width: 480px) {
+  body {
+    width: 100%;
+    margin: 0 auto;
+    min-width: 280px;
+    max-width: 3000px;
+    position: absolute;
+  }
+}
 /* index main fin */
 /* consorcios adm inicio*/
 #demo {
@@ -99,6 +100,7 @@ strong {
   background-color: white;
   text-shadow: none;
   text-align: left;
+  font-size: 100%;
 }
 .form a {
   color: #8d9db6;
@@ -140,7 +142,7 @@ strong {
 }
 
 .form1 {
-  width: 450px;
+  width: 50%;
   margin: auto;
   background: rgba(0, 0, 0, 0.4);
   padding: 10px 20px;
@@ -150,18 +152,6 @@ strong {
   color: white;
 }
 
-@media (max-width: 480px) {
-  .form1 {
-    width: 350px;
-    margin: auto;
-    background: rgba(0, 0, 0, 0.4);
-    padding: 10px 20px;
-    box-sizing: border-box;
-    margin-top: 20px;
-    border-radius: 7px;
-    color: white;
-  }
-}
 .h6formulario {
   color: white;
   text-align: center;
@@ -216,6 +206,7 @@ textarea {
 .body1 {
   background-color: #f1e3dd;
   background-image: url(../imagenes/hall3.png);
+  background-repeat: no-repeat;
   size: 500px;
   border: 2px solid black;
   display: flex;
@@ -316,7 +307,6 @@ h5 {
   font-size: 35px;
   line-height: 50px;
   font-weight: bold;
-  /* text-shadow: 0 0 10px black; */
 }
 
 /* whatsapp icon fin */
