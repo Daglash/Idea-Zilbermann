@@ -74,6 +74,8 @@ strong {
     min-width: 280px;
     max-width: 3000px;
     position: absolute;
+    min-height: auto;
+    max-height: fit-content;
   }
 }
 /* index main fin */
