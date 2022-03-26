@@ -33,6 +33,14 @@ a {
   color: white;
 }
 
+body{
+  width:100%;
+  margin: 0 auto;
+  min-width:440px;
+  max-width:3000px;
+  position: absolute;
+}
+
 
 
 main{
@@ -97,6 +105,20 @@ strong{
   @include sombras;
   @include Bordesredondeados;
 }
+
+// @media only screen and (min-width:292px) and (max-width:480px){
+//   h1{
+//     font-size: 40px;
+//     color: map-get($color, terciario );
+//     text-align: center;
+//   }
+//   .parrafo_portada{
+//     font-size: 25px;
+//     @extend h1;
+//   }
+//   }
+
+
 
 /* index main fin */
 
@@ -165,6 +187,7 @@ strong{
   background-image: url(../imagenes/BuenosAires.png);
   background-size: 100vw 100vh;
   background-attachment: fixed;
+  background-size: cover;
   margin: 0;
   padding: 20px 20px;
 }
@@ -179,6 +202,21 @@ strong{
   border-radius: 7px;
   color: map-get($color, terciario );
 }
+
+@media (max-width:480px){
+  .form1{
+    width: 350px;
+    margin: auto;
+    background: rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+    color: map-get($color, terciario );
+  }
+  
+  }
+
 
 .h6formulario{
   color: map-get($color, terciario );
@@ -217,7 +255,8 @@ textarea{
   padding: 5%;
   display: flex;
   justify-content: space-evenly;
-  gap: 20px; 
+  gap: 20px;
+  margin: 0; 
 }
 
 .cardanimate .card{
